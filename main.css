@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  "Inter Tight", sans-serif;
+    font-weight: 400;
+}
+
+header{
+    min-height: 9.3vh;
+    padding: 0 8.3vw 0 7.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.47vw;
+
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav ul a:hover{
+    color: #4CAF4F;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.97vw;
+}
+.Login{
+    width: 5.34vw;
+    height: 4.44vh;
+    color: #4CAF4F;
+    font-weight: 500;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    font-size: 14px;
+}
+.Sign-up{
+    width: 6.31vw;
+    height: 4.44vh;
+    background-color: #4CAF4F;
+    color: #FFFFFF;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    font-size: 14px;
+}
+
+.Login:hover, .Sign-up:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width: 1440px){}
+@media (max-width: 1440px){}
+
+
+@media (max-width: 1024px){
+    nav ul{
+        gap: 2vw;
+    }
+    header{
+        padding: 0 6.3vw 0 5.3vw;
+    }
+    .Login, .Sign-up{
+        width: 8.8vw;
+    }
+
+}
+
+@media (max-width: 820px){
+    header{
+        padding: 0 2.3vw 0 1.3vw;
+        flex-wrap: wrap;
+        min-height: 17vw;
+    }
+    
+    nav{
+        
+        order: 3;
+        width: 100%;
+        
+    }
+    .Login, .Sign-up{
+        width: 11.66vw;
+    }
+}
+
+@media (max-width: 660px){
+    header{
+        padding: 0 10px 0 10px ;
+    }
+    .Login, .Sign-up{
+        width: 15vw ;
+    }
+}
+@media (max-width: 425px) { 
+    .Login, .Sign-up{
+        width: 20vw ;
+    }
+}
