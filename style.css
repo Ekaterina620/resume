@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom right, blue, pink);
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 15vh;
+}
+.btn {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn a{
+    display: inline-flex;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-decoration: none;
+    background: black;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #9C98ED;
+    transition: 
+    transform 0.3s ease-out, 
+    background-color 0.2s linear;
+}
+.btn a:hover{
+    transform: scale(1.1); 
+}
+.btn a:active{
+    background-color: #655EE6;
+    
+}
